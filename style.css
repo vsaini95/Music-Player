@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background: url("images/bgmusic.jpg") no-repeat;
+  background-size: cover;
+}
+.nav {
+  height: 4rem;
+  background-color: black;
+  box-shadow: 2px 2px 1px 1px rgb(37, 36, 36);
+  padding-left: 1rem;
+}
+.logo img {
+  height: 60px;
+}
