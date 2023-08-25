@@ -1,18 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-}
-body {
   box-sizing: border-box;
-  background: url("images/bgmusic.jpg") no-repeat;
-  background-size: cover;
+}
+.wrapper {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem);
 }
 .nav {
   height: 4rem;
   background-color: black;
   box-shadow: 2px 2px 1px 1px rgb(37, 36, 36);
-  padding-left: 1rem;
+  padding-left: 1.5rem;
+}
+.container {
+  background: url("images/bgmusic.jpg") no-repeat;
+  background-size: cover;
+  height: 85%;
+  width: 85%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px rgba(134, 136, 131, 0.4);
 }
 .logo img {
-  height: 60px;
+  height: 64px;
 }
