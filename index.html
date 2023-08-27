@@ -9,6 +9,17 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/ae85a2a0e7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
 
     <title>Music-Player</title>
@@ -16,13 +27,51 @@
   <body>
     <nav class="nav">
       <div class="logo"><img src="images/logo.jpg" /></div>
-      <!--<div class="nav-actions">
-        <button class="btn-icon" data-playlist-toggler>
-          <span class="material-symbols-rounded">queue_music</span>
-        </button>
-      </div>-->
     </nav>
-    <div class="wrapper"><div class="container"></div></div>
+    <div class="wrapper">
+      <div class="container">
+        <figure class="music-banner">
+          <img
+            src="poster/radio.jpg"
+            alt="Happy Moments (Master) Album Poster"
+            class="img-cover"
+            data-player-banner
+          />
+        </figure>
+        <section class="music-content">
+          <div class="title">
+            <div class="music-tittle">
+              <h1>Radio</h1>
+              <p>Lana Del Rey</p>
+            </div>
+            <div class="side-icons">
+              <i class="fa-regular fa-heart" style="color: #6d6f74"></i>
+              <i
+                class="fa-solid fa-ellipsis-vertical"
+                style="color: #a6a8ab"
+              ></i>
+            </div>
+          </div>
+          <div class="music-control">
+            <input type="range" name="rangep" id="progress" min="0" max="100" />
+            <div class="icons">
+              <i
+                class="fa-solid fa-2x fa-backward-step"
+                style="color: #949699"
+              ></i>
+              <i
+                class="fa-solid fa-3x fa-circle-play"
+                style="color: #19b7bb"
+              ></i>
+              <i
+                class="fa-solid fa-2x fa-forward-step"
+                style="color: #949699"
+              ></i>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 .wrapper {
-  background-color: antiquewhite;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: calc(100vh - 4rem);
+  background: url("images/bg1.webp") no-repeat;
+  background-size: cover;
 }
 .nav {
   height: 4rem;
@@ -16,14 +18,81 @@
   box-shadow: 2px 2px 1px 1px rgb(37, 36, 36);
   padding-left: 1.5rem;
 }
-.container {
-  background: url("images/bgmusic.jpg") no-repeat;
-  background-size: cover;
-  height: 85%;
-  width: 85%;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 5px rgba(134, 136, 131, 0.4);
-}
 .logo img {
   height: 64px;
+}
+.container {
+  height: 30%;
+  width: 60%;
+  min-width: 700px;
+  margin-top: 8rem;
+  box-shadow: 5px 5px 10px 5px rgba(134, 136, 131, 0.4);
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 20px;
+}
+.img-cover {
+  border-radius: 10px;
+  height: 80%;
+  width: 150px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.side-icons i {
+  padding-left: 10px;
+}
+.music-content {
+  width: 80%;
+  padding-left: 20px;
+}
+.music-tittle p {
+  font-weight: 600;
+  color: rgb(141, 141, 137);
+}
+#progress {
+  width: 100%;
+  accent-color: #19b7bb;
+  height: 7px;
+}
+.icons {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons i {
+  padding-right: 50px;
+  cursor: pointer;
+}
+@media screen and (max-width: 769px) {
+  .container {
+    padding: 35px;
+    margin-top: 2rem;
+    min-width: 360px;
+    width: 50%;
+    flex-direction: column;
+    height: 80vh;
+  }
+  .music-banner {
+    width: 100%;
+  }
+  .img-cover {
+    width: 100%;
+    height: 230px;
+  }
+  .music-content {
+    width: 100%;
+    padding: 20px 0 0px 0;
+  }
+  .icons {
+    padding-top: 20px;
+    justify-content: space-evenly;
+  }
+  .icons i {
+    padding-right: 5px;
+  }
 }
