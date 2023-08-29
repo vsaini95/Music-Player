@@ -57,6 +57,7 @@
   width: 100%;
   accent-color: #19b7bb;
   height: 7px;
+  cursor: pointer;
 }
 .icons {
   padding-top: 10px;
