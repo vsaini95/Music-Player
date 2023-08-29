@@ -3,9 +3,11 @@ let songindex = 0;
 let masterplay = document.getElementById("masterPlay");
 let progress = document.getElementById("progress");
 let audioEle = new Audio("music/0.mp3");
-let imageCover = document.querySelector(".image-cover");
+let imageCover = document.querySelector(".img-cover");
 let songName = document.querySelector(".songName");
 let artist = document.querySelector(".artist");
+let forward = document.getElementById("forward");
+let backward = document.getElementById("backward");
 
 let songs = [
   {
@@ -22,25 +24,23 @@ let songs = [
   },
   {
     songName: "Sahiba",
-    singer: "Lana Del Ray",
+    singer: "Diljit Dosanjh",
     filepath: "music/2.mp3",
     coverpath: "poster/2.jpg",
   },
   {
     songName: "Sang Rahiyo",
-    singer: "Lana Del Ray",
+    singer: "Jasleen Royal",
     filepath: "music/3.mp3",
-    coverpath: "poster/3.jpg",
+    coverpath: "poster/3.jpeg",
   },
   {
-    songName: "wolves",
+    songName: "People you Know",
     singer: "Salena Gomez",
     filepath: "music/4.mp3",
     coverpath: "poster/4.jpg",
   },
 ];
-
-songs.forEach((ele) => {});
 
 //handling events
 
@@ -64,3 +64,38 @@ audioEle.addEventListener("timeupdate", () => {
 progress.addEventListener("change", () => {
   audioEle.currentTime = (progress.value * audioEle.duration) / 100;
 });
+
+const update = function (i) {
+  audioEle.src = `music/${i}.mp3`;
+  audioEle.currentTime = 0;
+  audioEle.play();
+  masterplay.classList.remove("fa-circle-play");
+  masterplay.classList.add("fa-circle-pause");
+
+  for (let j = 0; j < 5; j++) {
+    if (j == i) {
+      songName.textContent = songs[j].songName;
+      artist.textContent = songs[j].singer;
+      imageCover.src = songs[j].coverpath;
+    }
+  }
+};
+
+forward.addEventListener("click", () => {
+  if (songindex >= 4) {
+    songindex = 0;
+  } else {
+    songindex++;
+  }
+  update(songindex);
+});
+
+backward.addEventListener("click", () => {
+  if (songindex <= 0) {
+    songindex = 0;
+  } else {
+    songindex--;
+  }
+  update(songindex);
+});
+
