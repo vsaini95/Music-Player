@@ -4,7 +4,7 @@ This a small music player in which you can listen few of your favourite songs.
 
 ### Live Link
 
-Live site URL: [](https://vsaini95.github.io/Music-Player/)
+Live site URL: [https://vsaini95.github.io/Music-Player/]
 
 ### Built with
 
