@@ -1,18 +1,17 @@
 # Music-Player
 
-This a small music player in which you can listen few of your favourites songs.
+This a small music player in which you can listen few of your favourite songs.
 
-### Links
+### Live Link
 
--Live site URL: [](https://vsaini95.github.io/Music-Player/)
+Live site URL: [](https://vsaini95.github.io/Music-Player/)
 
 ### Built with
 
--HTML
--CSS
--Flexbox
--Javascript
--Mobie-first workflow
+HTML
+CSS
+Flexbox
+Javascript
 
 ### Screenshot
 
